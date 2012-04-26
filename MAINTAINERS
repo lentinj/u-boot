@@ -673,6 +673,10 @@ Igor Grinberg <grinberg@compulab.co.il>
 
 	cm-t35		ARM ARMV7 (OMAP3xx Soc)
 
+Jamie Lentin <jm@lentin.co.uk>
+
+	dns320		ARM926EJS (Kirkwood SoC)
+
 Stefan Herbrechtsmeier <stefan@code.herbrechtsmeier.net>
 
 	dns325		ARM926EJS (Kirkwood SoC)
