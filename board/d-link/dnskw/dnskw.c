@@ -33,15 +33,15 @@
 #include <asm/arch/kirkwood.h>
 #include <asm/arch/mpp.h>
 #include <asm/arch/gpio.h>
-#include "dns325.h"
+#include "dnskw.h"
 
 DECLARE_GLOBAL_DATA_PTR;
 
 int board_early_init_f(void)
 {
 	/* Gpio configuration */
-	kw_config_gpio(DNS325_OE_VAL_LOW, DNS325_OE_VAL_HIGH,
-			DNS325_OE_LOW, DNS325_OE_HIGH);
+	kw_config_gpio(DNSKW_OE_VAL_LOW, DNSKW_OE_VAL_HIGH,
+			DNSKW_OE_LOW, DNSKW_OE_HIGH);
 
 	/* Multi-Purpose Pins Functionality configuration */
 	u32 kwmpp_config[] = {
@@ -99,9 +99,9 @@ int board_early_init_f(void)
 	};
 	kirkwood_mpp_conf(kwmpp_config, NULL);
 
-	kw_gpio_set_blink(DNS325_GPIO_LED_POWER , 1);
+	kw_gpio_set_blink(DNSKW_GPIO_LED_POWER , 1);
 
-	kw_gpio_set_value(DNS325_GPIO_SATA0_EN , 1);
+	kw_gpio_set_value(DNSKW_GPIO_SATA0_EN , 1);
 	return 0;
 }
 
