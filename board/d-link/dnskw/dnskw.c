@@ -58,8 +58,8 @@ int board_early_init_f(void)
 		MPP10_UART0_TXD,
 		MPP11_UART0_RXD,
 		MPP12_SD_CLK,
-		MPP13_SD_CMD,
-		MPP14_SD_D0,
+		MPP13_UART1_TXD,	/* Custom ...*/
+		MPP14_UART1_RXD,	/* ... controller */
 		MPP15_SD_D1,
 		MPP16_SD_D2,
 		MPP17_SD_D3,
@@ -74,13 +74,13 @@ int board_early_init_f(void)
 		MPP26_GPIO,		/* power led */
 		MPP27_GPIO,		/* sata0(right) error led */
 		MPP28_GPIO,		/* sata1(left) error led */
-		MPP29_GPIO,		/* usb error led */
+		MPP29_GPIO,		/* usb error led (dns-325) */
 		MPP30_GPIO,
 		MPP31_GPIO,
 		MPP32_GPIO,
 		MPP33_GPIO,
 		MPP34_GPIO,		/* power key */
-		MPP35_GPIO,
+		MPP35_GPIO,		/* usb error led (dns-320) */
 		MPP36_GPIO,
 		MPP37_GPIO,
 		MPP38_GPIO,
