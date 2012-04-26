@@ -673,6 +673,10 @@ Kshitij Gupta <kshitij@ti.com>
 
 	omap1510inn	ARM925T
 
+Jamie Lentin <jm@lentin.co.uk>
+
+	dns320		ARM926EJS (Kirkwood SoC)
+
 Stefan Herbrechtsmeier <stefan@code.herbrechtsmeier.net>
 
 	dns325		ARM926EJS (Kirkwood SoC)
