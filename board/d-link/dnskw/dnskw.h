@@ -43,6 +43,12 @@
 #define DNSKW_OE_VAL_HIGH		0x00000800	/* disable leds */
 #endif /* CONFIG_BOARD_IS_DNS325 */
 
+/* DNS-320 specific configuration */
+#ifdef CONFIG_BOARD_IS_DNS320
+#define DNSKW_OE_VAL_LOW		0x38000000	/* disable leds */
+#define DNSKW_OE_VAL_HIGH		0x00000808	/* disable leds */
+#endif /* CONFIG_BOARD_IS_DNS320 */
+
 /* PHY related */
 #define MV88E1116_MAC_CTRL_REG		21
 #define MV88E1116_PGADR_REG		22
