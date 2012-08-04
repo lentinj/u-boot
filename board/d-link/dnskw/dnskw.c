@@ -55,14 +55,14 @@ int board_early_init_f(void)
 		MPP7_GPO,
 		MPP8_TW_SDA,
 		MPP9_TW_SCK,
-		MPP10_UART0_TXD,
-		MPP11_UART0_RXD,
-		MPP12_SD_CLK,
+		MPP10_UART0_TXD,	/* 5 pin ...*/
+		MPP11_UART0_RXD,	/* ... console header */
+		MPP12_GPO,
 		MPP13_UART1_TXD,	/* Custom ...*/
 		MPP14_UART1_RXD,	/* ... controller */
-		MPP15_SD_D1,
-		MPP16_SD_D2,
-		MPP17_SD_D3,
+		MPP15_GPIO,
+		MPP16_GPIO,
+		MPP17_GPIO,
 		MPP18_NF_IO0,
 		MPP19_NF_IO1,
 		MPP20_SATA1_ACTn,	/* sata1(left) status led */
